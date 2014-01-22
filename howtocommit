@@ -5,3 +5,7 @@ commit tekst
 esc
 :wq
 gitt push
+
+
+#Utf 8 format 
+# -*- coding: utf-8 -*-
