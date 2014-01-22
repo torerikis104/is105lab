@@ -1,0 +1,7 @@
+git add (fil navn)
+git commit
+i
+commit tekst
+esc
+:wq
+gitt push
