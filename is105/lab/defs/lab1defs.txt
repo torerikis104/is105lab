@@ -1,0 +1,20 @@
+* mkdir
+make directory, lager en mappe/directory.
+* cd
+change directory, endrer mappe/directory man er i.
+* ls
+list directory, lister opp filer og mapper i den mappen man er i.
+* ls -l
+viser informasjon om grupper og tilgang.
+* la la
+viser informasjon om grupper og tilgang, og i tillegg skjulte filer.
+* pwd
+print working directory, viser pathen du er på.
+* pipes and redirection
+redirection < og >, og pipe |, gjør at man kan endre hvor input og output går.
+* grep
+grep printer lines of input som matcher et spesielt mønster som gir bruker mulighet tilå lete gjennom filer og mapper.
+* cat
+cat kommandoen kan sette sammen flere filer og skrive resultatet til skjermen.
+* less
+less kommandoen gir bruker mulighet til å se innholdet i en fil, slik at man kan navigere gjennom en lang fil.
