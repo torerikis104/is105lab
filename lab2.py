@@ -10,8 +10,8 @@
 import sys
 
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
-gruppe = {  'student1': '-', \
-			'student2': '-', \
+gruppe = {  'student1': 'Behzad Zafar', \
+			'student2': 'Tor Erik Kaalaas', \
             'student3': '-', \
 }
 
@@ -29,32 +29,32 @@ gruppe = {  'student1': '-', \
 #    (./
 #     '` 
 def ascii_fugl():
-	pass
-
+    print"""
+       \/_
+  \,   /( ,/
+   \\\\\\' ///
+    \_ /_/
+    (./
+     '` 
+"""
+ascii_fugl()
 # 
 #  Oppgave 2
 #    'return 2' - 2 skal erstattes med en korrekt returverdi, 2 er kun en stedsholder
 #    bitAnd - x&y
 #    Eksempel: bitAnd(6, 5) = 4
 #
-def bitAnd(x, y):
-  return 2
+def bitAnd(x,y):
+	return x&y
+print bitAnd(5,6)
 
-# 
-#  Oppgave 3
-#    bitAnd - x&y
-#    Eksempel: bitAnd(6, 5) = 4
-#
-def bitAnd(x, y):
-  return 2
-
-#
-#  Oppgave 4
+#Oppgave 4
 #    bitXor - x^y
 #    Eksempel: bitXor(4, 5) = 1
 #
-def bitXor(x, y):
-  return 2
+def bitXor(x,y):
+	return x^y
+print bitXor(4,5)
 
 #
 #  Oppgave 5
@@ -62,7 +62,11 @@ def bitXor(x, y):
 #    Eksempel: bitOr(0, 1) = 1
 #
 def bitOr(x, y):
-  return 2
+	return x|y
+
+print bitOr(0,1)
+
+
 
 #
 #  Oppgave 6
@@ -82,10 +86,13 @@ def bitOr(x, y):
 #      : legger til formatteringsmuligheter for denne variabelen (ellers hadde den 6 desimalt)
 #      08 formatterer tall til 8 tegn og fuller med nuller til venstre hvis nødvendig
 #      b konverterer tallet til dets binære representasjon
-def ascii8Bin(bokstav):
-	return 2
+def ascii8Bin(A):
+	bokstav = ord(A)
+	bokstavvalg="{0:08b}".format(bokstav)
+	print bokstavvalg,bokstav
+ascii8Bin("A")
 
-# 
+
 #  Oppgave 7
 #    transferBin - ta en tilfeldig streng som argument og skriver ut en blokk av 8-bits strenger
 #                  som er den binære representasjon av strengen
@@ -96,7 +103,10 @@ def ascii8Bin(bokstav):
 def transferBin(string): 
 	l = list(string)
 	for c in l:
-		# skriv ut den binære representasjon av hvert tegn (bruk ascii8Bin funksjonen din)
+		ascii8Bin(c)
+
+transferBin("hei jeg heter Behzad")
+
 
 #
 #  Oppgave 8
@@ -105,6 +115,22 @@ def transferBin(string):
 #					Skriv gjerne en støttefunksjon ascii2Hex, som representerer et tegn
 #					med 2 heksadesimale tegn
 #  
+
+def ascii8Bin1(A):
+	bokstav = ord(A)
+	bokstavvalg="{0:08x}".format(bokstav)
+	return bokstavvalg
+ascii8Bin1("A")
+
+
 def transferHex(string):
-	pass
+	l = list(string)
+	for c in l:
+		print ascii8Bin1(c)
+	
+	
 		
+transferHex("hei jeg heter b")
+
+
+
